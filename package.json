@@ -1,0 +1,37 @@
+{
+  "name": "react-basic-config",
+  "version": "1.0.0",
+  "description": "Basic react app config with webpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vadalanaresh/react-basics-config.git"
+  },
+  "author": "Naresh Vadala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadalanaresh/react-basics-config/issues"
+  },
+  "homepage": "https://github.com/vadalanaresh/react-basics-config#readme",
+  "dependencies": {
+    "copy": "^0.3.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "copy": "^0.3.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
